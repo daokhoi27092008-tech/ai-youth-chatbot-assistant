@@ -1,20 +1,102 @@
 {
   "faq": [
-    {
-      "question": "Điều kiện vào đoàn",
-      "answer": "Học sinh từ lớp 9 trở lên, có ý thức tốt và tham gia hoạt động."
-    },
-    {
-      "question": "Số lượng đoàn viên",
-      "answer": "Hiện tại có khoảng 500 đoàn viên (cập nhật theo thực tế)."
-    },
-    {
-      "question": "Hoạt động đoàn",
-      "answer": "Bao gồm văn nghệ, tình nguyện, thể thao, sinh hoạt định kỳ."
-    },
-    {
-      "question": "Điểm rèn luyện",
-      "answer": "Dựa trên ý thức, học tập và tham gia hoạt động."
-    }
+    {"question": "Điều kiện vào đoàn", "answer": "Học sinh từ lớp 9 trở lên, có ý thức tốt và tham gia hoạt động."},
+    {"question": "Số lượng đoàn viên", "answer": "Hiện tại có khoảng 500 đoàn viên."},
+    {"question": "Hoạt động đoàn", "answer": "Bao gồm văn nghệ, tình nguyện, thể thao, sinh hoạt định kỳ."},
+    {"question": "Điểm rèn luyện là gì?", "answer": "Dựa trên ý thức, học tập và tham gia hoạt động."},
+    {"question": "Làm sao để tham gia hoạt động đoàn?", "answer": "Bạn đăng ký với chi đoàn hoặc ban tổ chức các hoạt động."},
+    {"question": "Thời gian sinh hoạt đoàn", "answer": "Sinh hoạt đoàn thường vào thứ 7 hàng tuần."},
+    {"question": "Quyền lợi của đoàn viên", "answer": "Được tham gia các hoạt động, phát triển kỹ năng và có giấy khen."},
+    {"question": "Lịch sử của đoàn", "answer": "Đoàn Thanh niên thành lập năm 1931, là tổ chức thanh niên lớn nhất Việt Nam."},
+    {"question": "Ai có thể tham gia đoàn?", "answer": "Học sinh, sinh viên từ 14 đến 30 tuổi có ý thức tốt đều có thể tham gia."},
+    {"question": "Liên hệ với đoàn trường như thế nào?", "answer": "Bạn có thể liên hệ qua phòng công tác học sinh hoặc website của trường."},
+
+    {"question": "Đoàn trường có những loại hoạt động nào?", "answer": "Có hoạt động văn nghệ, thể thao, học tập và tình nguyện."},
+    {"question": "Các phong trào đoàn viên", "answer": "Phong trào thanh niên tình nguyện, tuổi trẻ sáng tạo, học tập tốt."},
+    {"question": "Thành tích đoàn viên được công nhận như thế nào?", "answer": "Qua tham gia hoạt động, điểm rèn luyện và đề xuất từ chi đoàn."},
+    {"question": "Quy trình kết nạp đoàn viên mới", "answer": "Gồm tìm hiểu, phỏng vấn, thử thách và lễ kết nạp."},
+    {"question": "Đoàn trường tổ chức những sự kiện nào?", "answer": "Ngày hội thanh niên, chiến dịch tình nguyện hè, các cuộc thi học thuật."},
+    {"question": "Ai là bí thư đoàn trường?", "answer": "Bí thư đoàn trường hiện tại là thầy Nguyễn Văn A."},
+    {"question": "Có thể tham gia đoàn ở cấp nào?", "answer": "Từ cấp trường, huyện, tỉnh đến trung ương."},
+    {"question": "Cách tham gia tình nguyện tại đoàn", "answer": "Liên hệ với ban tổ chức để đăng ký tham gia các chiến dịch."},
+    {"question": "Thời gian diễn ra đại hội đoàn", "answer": "Thường tổ chức 5 năm một lần."},
+    {"question": "Tiêu chuẩn trở thành cán bộ đoàn", "answer": "Năng động, nhiệt huyết, có khả năng tổ chức hoạt động."},
+
+    {"question": "Đoàn có tổ chức các lớp học kỹ năng?", "answer": "Có các lớp kỹ năng mềm như giao tiếp, lãnh đạo, teamwork."},
+    {"question": "Làm sao để được khen thưởng trong đoàn?", "answer": "Tham gia tích cực các hoạt động và có thành tích nổi bật."},
+    {"question": "Các hình thức sinh hoạt đoàn", "answer": "Sinh hoạt trực tiếp, sinh hoạt online, sinh hoạt nhóm nhỏ."},
+    {"question": "Chương trình đào tạo đoàn viên mới", "answer": "Bao gồm học tập lý luận và tham gia thực tế."},
+    {"question": "Đoàn trường có câu lạc bộ nào?", "answer": "Có các câu lạc bộ thể thao, văn nghệ, học thuật."},
+    {"question": "Số lượng cán bộ đoàn trong trường", "answer": "Khoảng 10-15 cán bộ đoàn hoạt động thường xuyên."},
+    {"question": "Phương pháp đánh giá đoàn viên", "answer": "Dựa vào điểm rèn luyện và sự tham gia hoạt động."},
+    {"question": "Cách đăng ký tham gia hoạt động thể thao", "answer": "Đăng ký với ban thể thao hoặc qua chi đoàn."},
+    {"question": "Thời gian tổ chức các sự kiện lớn của đoàn", "answer": "Thường tổ chức vào các dịp lễ lớn trong năm."},
+    {"question": "Đoàn có tổ chức các buổi tập huấn", "answer": "Có các buổi tập huấn kỹ năng và kiến thức cho đoàn viên."},
+
+    {"question": "Làm sao để liên hệ với ban tổ chức đoàn", "answer": "Gửi email hoặc đến văn phòng đoàn trường."},
+    {"question": "Đoàn viên có được cấp giấy chứng nhận không?", "answer": "Có, sau khi hoàn thành nhiệm vụ và rèn luyện."},
+    {"question": "Mục tiêu của đoàn thanh niên", "answer": "Phát triển thanh niên, góp phần xây dựng đất nước."},
+    {"question": "Các chiến dịch tình nguyện phổ biến", "answer": "Chiến dịch Mùa hè xanh, Xuân tình nguyện, Tiếp sức mùa thi."},
+    {"question": "Đoàn có hỗ trợ học bổng không?", "answer": "Có một số học bổng dành cho đoàn viên có thành tích."},
+    {"question": "Các hoạt động văn hóa của đoàn", "answer": "Tổ chức các buổi biểu diễn, thi văn nghệ, ngày hội văn hóa."},
+    {"question": "Cách tham gia các cuộc thi do đoàn tổ chức", "answer": "Đăng ký qua chi đoàn hoặc ban tổ chức sự kiện."},
+    {"question": "Đoàn có hỗ trợ phát triển kỹ năng mềm", "answer": "Có các khóa học kỹ năng, workshop dành cho đoàn viên."},
+    {"question": "Vai trò của bí thư chi đoàn", "answer": "Lãnh đạo, tổ chức các hoạt động trong chi đoàn."},
+    {"question": "Có thể chuyển đổi chi đoàn không?", "answer": "Có thể chuyển đổi theo quy định của đoàn trường."},
+
+    {"question": "Đoàn viên cần đóng phí không?", "answer": "Có, đóng phí theo quy định hằng năm."},
+    {"question": "Phương thức tổ chức họp đoàn", "answer": "Có thể họp trực tiếp hoặc họp trực tuyến."},
+    {"question": "Cách theo dõi thông tin đoàn", "answer": "Qua website, fanpage và các kênh thông tin chính thức."},
+    {"question": "Đoàn có tổ chức các lớp học ngoại ngữ?", "answer": "Có các lớp học tiếng Anh và các ngoại ngữ khác."},
+    {"question": "Thời gian kết nạp đoàn viên mới", "answer": "Thường vào đầu năm học hoặc theo đợt quy định."},
+    {"question": "Đoàn có chương trình hỗ trợ việc làm", "answer": "Có phối hợp với doanh nghiệp tạo cơ hội việc làm."},
+    {"question": "Ai là người quyết định khen thưởng đoàn viên?", "answer": "Ban chấp hành đoàn trường hoặc cấp trên."},
+    {"question": "Đoàn có tổ chức dã ngoại không?", "answer": "Có các hoạt động dã ngoại, tham quan học tập."},
+    {"question": "Các tiêu chí đánh giá cán bộ đoàn", "answer": "Năng lực tổ chức, tinh thần trách nhiệm, kỹ năng giao tiếp."},
+    {"question": "Làm sao để đề xuất ý tưởng hoạt động mới?", "answer": "Gửi đề xuất cho ban chấp hành hoặc bí thư chi đoàn."},
+
+    {"question": "Các hình thức tham gia đoàn", "answer": "Tham gia chi đoàn, câu lạc bộ, các phong trào thanh niên."},
+    {"question": "Có thể tham gia đoàn ngoài giờ học không?", "answer": "Có thể tham gia các hoạt động ngoài giờ và cuối tuần."},
+    {"question": "Thời gian giữ chức cán bộ đoàn là bao lâu?", "answer": "Thường là một nhiệm kỳ 2 năm."},
+    {"question": "Đoàn có tổ chức các hoạt động thể dục thể thao?", "answer": "Có các giải bóng đá, bóng chuyền, chạy bộ."},
+    {"question": "Có thể xin giấy xác nhận đoàn viên không?", "answer": "Có thể xin giấy tại văn phòng đoàn trường."},
+    {"question": "Các bước để trở thành cán bộ đoàn", "answer": "Ứng cử, bầu cử, tham gia đào tạo cán bộ."},
+    {"question": "Chế độ khen thưởng cho đoàn viên xuất sắc", "answer": "Giấy khen, phần thưởng tiền mặt hoặc học bổng."},
+    {"question": "Đoàn có tổ chức các khóa học về kỹ năng sống?", "answer": "Có các khóa học kỹ năng mềm, quản lý thời gian."},
+    {"question": "Thông tin liên hệ bí thư đoàn", "answer": "Bạn có thể liên hệ qua email hoặc số điện thoại nội bộ."},
+    {"question": "Đoàn có tổ chức các hoạt động cộng đồng?", "answer": "Có tổ chức hiến máu tình nguyện, làm sạch môi trường."},
+
+    {"question": "Cách thức tham gia sinh hoạt đoàn", "answer": "Tham gia sinh hoạt tại chi đoàn hoặc các nhóm nhỏ."},
+    {"question": "Làm sao để rời khỏi đoàn?", "answer": "Nộp đơn xin rời và được chấp thuận từ chi đoàn."},
+    {"question": "Đoàn có hoạt động hỗ trợ học tập không?", "answer": "Có các lớp học thêm, câu lạc bộ học thuật."},
+    {"question": "Quy định về trang phục khi tham gia đoàn", "answer": "Thường mặc áo đoàn hoặc trang phục lịch sự."},
+    {"question": "Có thể tham gia đoàn khi đã ra trường không?", "answer": "Không, đoàn chủ yếu dành cho học sinh, sinh viên."},
+    {"question": "Cách thức báo cáo hoạt động đoàn", "answer": "Báo cáo theo định kỳ lên ban chấp hành đoàn."},
+    {"question": "Đoàn có tổ chức các chuyến đi thiện nguyện?", "answer": "Có thường xuyên các chuyến đi vùng sâu vùng xa."},
+    {"question": "Làm sao để được đề cử làm cán bộ đoàn?", "answer": "Qua bầu cử hoặc đề xuất từ chi đoàn."},
+    {"question": "Có thể tham gia các hoạt động đoàn trực tuyến không?", "answer": "Có thể tham gia qua các nền tảng online."},
+    {"question": "Đoàn có hỗ trợ học sinh khó khăn?", "answer": "Có các chương trình hỗ trợ học bổng và vật chất."},
+
+    {"question": "Các ngày lễ lớn của đoàn", "answer": "Ngày thành lập đoàn 26/3, các ngày truyền thống khác."},
+    {"question": "Cách thức tổ chức các cuộc thi do đoàn", "answer": "Tổ chức qua nhiều vòng, có ban giám khảo chuyên môn."},
+    {"question": "Đoàn có hợp tác với các tổ chức khác không?", "answer": "Có hợp tác với các tổ chức xã hội và doanh nghiệp."},
+    {"question": "Quy định về việc đóng phí đoàn", "answer": "Phí được đóng theo quy định của cấp đoàn."},
+    {"question": "Đoàn có tổ chức hội nghị thường niên?", "answer": "Có hội nghị tổng kết hoạt động hàng năm."},
+    {"question": "Làm sao để theo dõi lịch sinh hoạt đoàn?", "answer": "Qua website hoặc bảng thông báo đoàn trường."},
+    {"question": "Đoàn có các kênh truyền thông riêng?", "answer": "Có fanpage, website và nhóm chat nội bộ."},
+    {"question": "Các chương trình đào tạo cán bộ đoàn", "answer": "Các khóa đào tạo kỹ năng, quản lý và lãnh đạo."},
+    {"question": "Có thể gia hạn thời gian giữ chức cán bộ không?", "answer": "Có thể theo quy định cấp trên và chi đoàn."},
+    {"question": "Các quyền lợi khi trở thành cán bộ đoàn", "answer": "Phát triển kỹ năng, cơ hội học bổng và khen thưởng."},
+
+    {"question": "Làm sao để tổ chức hoạt động đoàn?", "answer": "Lập kế hoạch, xin phép và phối hợp thực hiện."},
+    {"question": "Đoàn có tổ chức các buổi giao lưu không?", "answer": "Có các buổi giao lưu văn hóa, thể thao giữa các chi đoàn."},
+    {"question": "Thời gian làm việc của văn phòng đoàn", "answer": "Thường từ 8h đến 17h các ngày trong tuần."},
+    {"question": "Có thể gửi phản hồi về hoạt động đoàn ở đâu?", "answer": "Qua email hoặc hộp thư góp ý tại văn phòng."},
+    {"question": "Đoàn có các giải thưởng nào hàng năm?", "answer": "Giải thưởng thanh niên xuất sắc, giải phong trào."},
+    {"question": "Quy trình giải quyết khiếu nại trong đoàn", "answer": "Tiếp nhận, xử lý và trả lời theo quy định."},
+    {"question": "Có thể tham gia các hoạt động quốc tế của đoàn không?", "answer": "Có cơ hội tham gia qua các chương trình giao lưu."},
+    {"question": "Đoàn có hỗ trợ khởi nghiệp không?", "answer": "Có các chương trình hỗ trợ ý tưởng sáng tạo và khởi nghiệp."},
+    {"question": "Các tiêu chí đánh giá thành tích đoàn viên", "answer": "Tham gia tích cực, đạt thành tích học tập và hoạt động."},
+    {"question": "Làm sao để biết lịch thi kết nạp đoàn?", "answer": "Thông báo qua chi đoàn và ban tổ chức."}
   ]
 }

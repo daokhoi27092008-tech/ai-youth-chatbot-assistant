@@ -11,6 +11,15 @@ with open("data.json", encoding="utf-8") as f:
 
 FAQ = data.get("faq", [])
 
+# Danh sách câu hỏi gợi ý (lấy 5 câu đầu từ FAQ hoặc tự định nghĩa)
+SUGGESTIONS = [
+    "Điều kiện vào đoàn",
+    "Số lượng đoàn viên",
+    "Hoạt động đoàn",
+    "Điểm rèn luyện là gì?",
+    "Làm sao để tham gia hoạt động đoàn?"
+]
+
 # ======================
 # INTENT MATCH (SMART)
 # ======================
@@ -61,11 +70,10 @@ def chat():
         answer = find_best_answer(user_message)
 
         if not answer:
-            answer = """Mình chưa hiểu rõ câu hỏi 🤔  
-Bạn có thể hỏi:
-- Điều kiện vào Đoàn
-- Hoạt động
-- Số lượng đoàn viên
+            suggestions_text = "\n".join(f"- {q}" for q in SUGGESTIONS)
+            answer = f"""Mình chưa hiểu rõ câu hỏi 🤔  
+Bạn có thể hỏi một trong các câu sau:
+{suggestions_text}
 """
 
         return jsonify({"reply": answer})
@@ -81,6 +89,7 @@ Bạn có thể hỏi:
 def reset():
     session.clear()
     return jsonify({"status": "ok"})
+
 
 import os
 
