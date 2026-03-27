@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify, session
 import json
 import difflib
+import os
 
 app = Flask(__name__)
 app.secret_key = "secret123"
@@ -13,13 +14,16 @@ with open("data.json", encoding="utf-8") as f:
 
 FAQ = data.get("faq", [])
 
-# Danh sách câu hỏi gợi ý (lấy 5 câu đầu từ FAQ hoặc tự định nghĩa)
+# Danh sách câu hỏi gợi ý
 SUGGESTIONS = [
     "Điều kiện vào đoàn",
     "Số lượng đoàn viên",
     "Hoạt động đoàn",
     "Điểm rèn luyện là gì?",
-    "Làm sao để tham gia hoạt động đoàn?"
+    "Làm sao để tham gia hoạt động đoàn?",
+    "Ai có thể tham gia đoàn",
+    "Lịch sử của đoàn",
+    "Ai là bí thư đoàn trường"
 ]
 
 # ======================
@@ -30,12 +34,10 @@ def find_best_answer(user_input):
 
     # Lặp qua từng FAQ
     for item in FAQ:
-        # Tạo danh sách câu có thể so khớp: question + aliases nếu có
         questions = [item["question"].lower()]
         if "aliases" in item:
             questions += [alias.lower() for alias in item["aliases"]]
 
-        # So khớp gần đúng
         match = difflib.get_close_matches(user_input, questions, n=1, cutoff=0.4)
         if match:
             return item["answer"]
@@ -68,7 +70,6 @@ def chat():
         if not user_message:
             return jsonify({"reply": "Bạn chưa nhập nội dung 🤔"})
 
-        # save history
         if "history" not in session:
             session["history"] = []
 
@@ -87,9 +88,7 @@ Bạn có thể hỏi một trong các câu sau:
 
     except Exception as e:
         print("ERROR:", e)
-        return jsonify({
-            "reply": "⚠️ Server đang bận, thử lại sau nhé!"
-        })
+        return jsonify({"reply": "⚠️ Server đang bận, thử lại sau nhé!"})
 
 
 @app.route("/reset", methods=["POST"])
@@ -97,8 +96,6 @@ def reset():
     session.clear()
     return jsonify({"status": "ok"})
 
-
-import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
