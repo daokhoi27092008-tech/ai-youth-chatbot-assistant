@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>AI Youth Assistant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="app-bg"></div>
+
+<div class="chat-container">
+
+    <!-- HEADER -->
+    <div class="chat-header">
+        <div class="header-left">
+            <img src="https://i.imgur.com/7k12EPD.png" class="avatar">
+            <div>
+                <div class="title">AI Youth Assistant</div>
+                <div id="status" class="status">🟢 Sẵn sàng</div>
+            </div>
+        </div>
+<div class="header-right">
+    <button onclick="toggleTheme()" id="theme-btn">🌙</button>
+    <button onclick="resetChat()">🔄</button>
+    <button onclick="showHelp()">ℹ️</button>
+</div>
+    </div>
+
+    <!-- CHAT -->
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- QUICK -->
+    <div class="quick-btns" id="quick-btns">
+        <button onclick="sendQuick('Điều kiện vào đoàn')">🏆 Điều kiện</button>
+        <button onclick="sendQuick('Số lượng đoàn viên')">📊 Số lượng</button>
+        <button onclick="sendQuick('Hoạt động đoàn')">🎯 Hoạt động</button>
+    </div>
+
+    <!-- INPUT -->
+    <div class="chat-input">
+        <input id="user-input" placeholder="Hỏi về Đoàn..." />
+        <button id="send-btn">➤</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
