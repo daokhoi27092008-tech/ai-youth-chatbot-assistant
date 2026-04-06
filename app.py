@@ -14,43 +14,43 @@ with open("data.json", encoding="utf-8") as f:
 
 FAQ = data.get("faq", [])
 
-# Danh sách câu hỏi gợi ý
+# ======================
+# SUGGESTIONS (mix Đoàn + tâm lý)
+# ======================
 SUGGESTIONS = [
     "Điều kiện vào đoàn",
-    "Số lượng đoàn viên",
     "Hoạt động đoàn",
-    "Điểm rèn luyện là gì?",
-    "Làm sao để tham gia hoạt động đoàn?",
-    "Ai có thể tham gia đoàn",
-    "Lịch sử của đoàn",
-    "Ai là bí thư đoàn trường"
+    "Tôi cảm thấy stress vì học tập",
+    "Tôi bị mất động lực học",
+    "Làm sao để tự tin hơn?"
 ]
 
 # ======================
-# SMART INTENT MATCH
+# SMART MATCH
 # ======================
 def find_best_answer(user_input):
     user_input = user_input.lower()
 
-    # Lặp qua từng FAQ
+    best_match = None
+    highest_ratio = 0
+
     for item in FAQ:
-        questions = [item["question"].lower()]
-        if "aliases" in item:
-            questions += [alias.lower() for alias in item["aliases"]]
+        question = item["question"].lower()
+        ratio = difflib.SequenceMatcher(None, user_input, question).ratio()
 
-        match = difflib.get_close_matches(user_input, questions, n=1, cutoff=0.4)
-        if match:
-            return item["answer"]
+        if ratio > highest_ratio:
+            highest_ratio = ratio
+            best_match = item
 
-    # keyword fallback
-    if "bao nhiêu" in user_input or "số lượng" in user_input:
-        return "Hiện tại đoàn trường có khoảng 500+ đoàn viên (cập nhật theo thực tế)."
+    if highest_ratio > 0.4:
+        return best_match["answer"]
 
-    if "điều kiện" in user_input or "vào đoàn" in user_input:
-        return "Bạn cần học sinh từ lớp 9 trở lên, có ý thức tốt và tham gia hoạt động."
+    # fallback tâm lý
+    if any(word in user_input for word in ["stress", "áp lực", "mệt", "chán"]):
+        return "Có vẻ bạn đang khá mệt 😔 Hãy nghỉ ngắn một chút, uống nước và đừng ép bản thân quá nhé."
 
-    if "hoạt động" in user_input:
-        return "Bao gồm văn nghệ, tình nguyện, thể thao, sinh hoạt định kỳ."
+    if any(word in user_input for word in ["lo", "sợ", "bất an"]):
+        return "Lo lắng là điều bình thường. Bạn không cần giải quyết mọi thứ ngay lập tức, cứ từng bước thôi."
 
     return None
 
@@ -80,7 +80,7 @@ def chat():
         if not answer:
             suggestions_text = "\n".join(f"- {q}" for q in SUGGESTIONS)
             answer = f"""Mình chưa hiểu rõ câu hỏi 🤔  
-Bạn có thể hỏi một trong các câu sau:
+Bạn có thể thử hỏi:
 {suggestions_text}
 """
 
