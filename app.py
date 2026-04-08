@@ -15,42 +15,63 @@ with open("data.json", encoding="utf-8") as f:
 FAQ = data.get("faq", [])
 
 # ======================
-# SUGGESTIONS (mix Đoàn + tâm lý)
+# SUGGESTIONS
 # ======================
 SUGGESTIONS = [
-    "Điều kiện vào đoàn",
-    "Hoạt động đoàn",
-    "Tôi cảm thấy stress vì học tập",
-    "Tôi bị mất động lực học",
-    "Làm sao để tự tin hơn?"
+    "Tiêu chuẩn vào đoàn là gì?",
+    "Em bị bạn bắt nạt phải làm sao?",
+    "Thi giáo dục STEM là gì?",
+    "Hoạt động chào mừng 30/4 có gì?",
+    "Em bị stress học tập"
 ]
 
 # ======================
-# SMART MATCH
+# NORMALIZE TEXT
+# ======================
+def normalize(text):
+    return text.lower().strip()
+
+# ======================
+# FIND BEST MATCH
 # ======================
 def find_best_answer(user_input):
-    user_input = user_input.lower()
+    user_input = normalize(user_input)
 
     best_match = None
-    highest_ratio = 0
+    highest_score = 0
 
     for item in FAQ:
-        question = item["question"].lower()
-        ratio = difflib.SequenceMatcher(None, user_input, question).ratio()
+        question = normalize(item["question"])
 
-        if ratio > highest_ratio:
-            highest_ratio = ratio
+        score = difflib.SequenceMatcher(None, user_input, question).ratio()
+
+        # BONUS: keyword boost
+        if any(word in user_input for word in question.split()):
+            score += 0.1
+
+        if score > highest_score:
+            highest_score = score
             best_match = item
 
-    if highest_ratio > 0.4:
+    if highest_score > 0.45:
         return best_match["answer"]
 
-    # fallback tâm lý
-    if any(word in user_input for word in ["stress", "áp lực", "mệt", "chán"]):
-        return "Có vẻ bạn đang khá mệt 😔 Hãy nghỉ ngắn một chút, uống nước và đừng ép bản thân quá nhé."
+    return None
 
-    if any(word in user_input for word in ["lo", "sợ", "bất an"]):
-        return "Lo lắng là điều bình thường. Bạn không cần giải quyết mọi thứ ngay lập tức, cứ từng bước thôi."
+# ======================
+# SMART FALLBACK
+# ======================
+def fallback_answer(user_input):
+    user_input = normalize(user_input)
+
+    if any(x in user_input for x in ["bắt nạt", "bạo lực"]):
+        return "Bạn không nên im lặng. Hãy báo với thầy cô hoặc người lớn. Bạn xứng đáng được bảo vệ."
+
+    if any(x in user_input for x in ["stress", "áp lực", "mệt"]):
+        return "Bạn đang cố gắng rất nhiều rồi. Hãy nghỉ ngắn, uống nước và thư giãn nhé."
+
+    if any(x in user_input for x in ["lo", "sợ"]):
+        return "Lo lắng là bình thường. Bạn không cần giải quyết mọi thứ ngay lập tức."
 
     return None
 
@@ -70,17 +91,19 @@ def chat():
         if not user_message:
             return jsonify({"reply": "Bạn chưa nhập nội dung 🤔"})
 
-        if "history" not in session:
-            session["history"] = []
+        # lưu history
+        session.setdefault("history", []).append(user_message)
 
-        session["history"].append(user_message)
-
+        # tìm câu trả lời
         answer = find_best_answer(user_message)
 
         if not answer:
+            answer = fallback_answer(user_message)
+
+        if not answer:
             suggestions_text = "\n".join(f"- {q}" for q in SUGGESTIONS)
-            answer = f"""Mình chưa hiểu rõ câu hỏi 🤔  
-Bạn có thể thử hỏi:
+            answer = f"""Mình chưa hiểu rõ 🤔  
+Bạn có thể hỏi:
 {suggestions_text}
 """
 
@@ -88,7 +111,7 @@ Bạn có thể thử hỏi:
 
     except Exception as e:
         print("ERROR:", e)
-        return jsonify({"reply": "⚠️ Server đang bận, thử lại sau nhé!"})
+        return jsonify({"reply": "⚠️ Server lỗi rồi 😢"})
 
 
 @app.route("/reset", methods=["POST"])

@@ -1,66 +1,31 @@
 {
   "faq": [
 
-    // ===== ĐOÀN =====
-    {"question": "Điều kiện vào đoàn", "answer": "Học sinh từ 16 tuổi, có ý thức tốt và tham gia hoạt động."},
-    {"question": "Hoạt động đoàn", "answer": "Bao gồm văn nghệ, tình nguyện, thể thao, sinh hoạt định kỳ."},
-    {"question": "Ai có thể tham gia đoàn", "answer": "Học sinh, sinh viên từ 16 đến 30 tuổi."},
-    {"question": "Làm sao để tham gia hoạt động đoàn?", "answer": "Bạn đăng ký với chi đoàn hoặc ban tổ chức."},
-    {"question": "Ai là bí thư đoàn trường", "answer": "Bạn có thể hỏi trực tiếp nhà trường để cập nhật mới nhất."},
+    {"question": "Tiêu chuẩn vào đoàn là gì?", "answer": "Thanh niên từ 16-30 tuổi, có đạo đức tốt, tham gia hoạt động, hiểu về Đoàn và được giới thiệu hợp lệ."},
+    {"question": "Quyền của đoàn viên là gì?", "answer": "Được tham gia hoạt động, được bảo vệ quyền lợi, được bầu cử, góp ý và phát triển bản thân."},
+    {"question": "Nghĩa vụ của đoàn viên là gì?", "answer": "Chấp hành điều lệ, rèn luyện đạo đức, tham gia hoạt động và đóng đoàn phí đầy đủ."},
 
-    // ===== TÂM LÝ (50 câu) =====
-    {"question": "Tôi cảm thấy stress vì học tập", "answer": "Bạn đang cố gắng rất nhiều rồi. Hãy nghỉ ngắn một chút và quay lại sau nhé."},
-    {"question": "Tôi bị mất động lực học", "answer": "Đôi lúc ai cũng vậy. Hãy bắt đầu lại từ việc nhỏ nhất."},
-    {"question": "Tôi cảm thấy cô đơn", "answer": "Bạn không hề một mình đâu. Có rất nhiều người sẵn sàng lắng nghe bạn."},
-    {"question": "Tôi lo lắng quá nhiều", "answer": "Hãy thử hít thở sâu và tập trung vào hiện tại."},
-    {"question": "Tôi thấy mình không đủ giỏi", "answer": "Bạn đang tiến bộ mỗi ngày, chỉ là bạn chưa nhận ra thôi."},
+    {"question": "Em bị bạn bắt nạt phải làm sao?", "answer": "Không im lặng, hãy báo với thầy cô hoặc người lớn, lưu bằng chứng nếu có. Bạn xứng đáng được bảo vệ."},
+    {"question": "Nếu thấy bạn bị bắt nạt?", "answer": "Không cổ vũ, hãy báo cho giáo viên hoặc người có trách nhiệm."},
 
-    {"question": "Tôi chán học", "answer": "Hãy thử đổi cách học hoặc nghỉ ngắn để lấy lại năng lượng."},
-    {"question": "Tôi áp lực điểm số", "answer": "Điểm số không quyết định hoàn toàn giá trị của bạn."},
-    {"question": "Tôi sợ thi", "answer": "Chuẩn bị tốt và tin vào bản thân là đủ rồi."},
-    {"question": "Tôi dễ mất tập trung", "answer": "Hãy thử học 25 phút rồi nghỉ 5 phút."},
-    {"question": "Tôi thấy mệt mỏi", "answer": "Có thể bạn đang cần nghỉ ngơi nhiều hơn."},
+    {"question": "Em bị stress học tập", "answer": "Hãy nghỉ ngắn, chia nhỏ việc học và đừng ép bản thân quá."},
+    {"question": "Em không tập trung học được", "answer": "Thử học Pomodoro, tắt điện thoại và chọn nơi yên tĩnh."},
+    {"question": "Em mất động lực học", "answer": "Hãy bắt đầu từ mục tiêu nhỏ và hoàn thành từng bước."},
 
-    {"question": "Tôi buồn", "answer": "Buồn là cảm xúc bình thường, bạn cứ cho phép mình cảm nhận nó."},
-    {"question": "Tôi bị áp lực gia đình", "answer": "Hãy thử chia sẻ cảm xúc của bạn với người thân."},
-    {"question": "Tôi không có bạn", "answer": "Hãy thử mở lời với một người, từng bước thôi."},
-    {"question": "Tôi sợ bị đánh giá", "answer": "Ai cũng có lúc sai, bạn không cần hoàn hảo."},
-    {"question": "Tôi hay suy nghĩ tiêu cực", "answer": "Hãy thử viết ra để giải tỏa."},
+    {"question": "Thi giáo dục STEM là gì?", "answer": "Là cuộc thi ứng dụng kiến thức khoa học, công nghệ, kỹ thuật để giải quyết vấn đề thực tế."},
+    {"question": "Hoạt động STEM ở trường có gì?", "answer": "Gồm làm sản phẩm, thí nghiệm, sáng tạo và thi theo nhóm."},
 
-    {"question": "Tôi không tự tin", "answer": "Hãy bắt đầu từ những điều nhỏ bạn làm tốt."},
-    {"question": "Tôi dễ cáu", "answer": "Hãy dừng lại vài giây trước khi phản ứng."},
-    {"question": "Tôi mất ngủ", "answer": "Hãy giảm dùng điện thoại trước khi ngủ."},
-    {"question": "Tôi không biết mục tiêu", "answer": "Bạn có thể thử nhiều thứ để khám phá bản thân."},
-    {"question": "Tôi sợ thất bại", "answer": "Thất bại giúp bạn trưởng thành hơn."},
+    {"question": "Hoạt động chào mừng 30/4 có gì?", "answer": "Gồm văn nghệ, thi đua, hoạt động truyền thống và giáo dục lịch sử."},
 
-    {"question": "Tôi thấy áp lực mỗi ngày", "answer": "Bạn không cần làm mọi thứ hoàn hảo."},
-    {"question": "Tôi không kiểm soát cảm xúc", "answer": "Hãy học cách nhận diện cảm xúc trước."},
-    {"question": "Tôi thấy mình vô dụng", "answer": "Bạn có giá trị riêng, chỉ là bạn chưa thấy."},
-    {"question": "Tôi bị cô lập", "answer": "Hãy tìm một người bạn tin tưởng."},
-    {"question": "Tôi không muốn học", "answer": "Hãy thử nghỉ ngắn rồi quay lại."},
+    {"question": "Hoạt động hướng nghiệp là gì?", "answer": "Giúp học sinh hiểu ngành nghề, định hướng tương lai và lựa chọn phù hợp."},
 
-    {"question": "Tôi thiếu động lực", "answer": "Hãy nhớ lại lý do bạn bắt đầu."},
-    {"question": "Tôi thấy bế tắc", "answer": "Mọi chuyện rồi sẽ qua, hãy đi từng bước nhỏ."},
-    {"question": "Tôi lo về tương lai", "answer": "Tập trung vào hiện tại sẽ giúp bạn tốt hơn."},
-    {"question": "Tôi dễ stress", "answer": "Hãy tập thể dục nhẹ để giải tỏa."},
-    {"question": "Tôi không có năng lượng", "answer": "Có thể bạn cần nghỉ ngơi và ăn uống tốt hơn."},
+    {"question": "Giải bóng chuyền truyền thống là gì?", "answer": "Là hoạt động thể thao thường niên nhằm rèn luyện sức khỏe và tăng tinh thần đoàn kết."},
 
-    {"question": "Tôi không muốn giao tiếp", "answer": "Bạn có thể bắt đầu từ những cuộc trò chuyện nhỏ."},
-    {"question": "Tôi thấy mình khác biệt", "answer": "Khác biệt cũng là một điểm mạnh."},
-    {"question": "Tôi không vui", "answer": "Hãy thử làm điều bạn thích."},
-    {"question": "Tôi bị căng thẳng", "answer": "Hãy thử nghe nhạc hoặc đi dạo."},
-    {"question": "Tôi không kiểm soát được suy nghĩ", "answer": "Viết ra sẽ giúp bạn rõ hơn."},
+    {"question": "Em bị áp lực gia đình", "answer": "Hãy chia sẻ nhẹ nhàng với bố mẹ, họ sẽ dần hiểu bạn."},
+    {"question": "Em lo lắng quá nhiều", "answer": "Hãy hít thở sâu và tập trung vào hiện tại."},
+    {"question": "Em cảm thấy cô đơn", "answer": "Bạn không hề một mình, hãy thử kết nối với người khác."},
+    {"question": "Em tự ti", "answer": "Hãy tập trung vào điểm mạnh của mình."},
+    {"question": "Em buồn", "answer": "Buồn là cảm xúc bình thường, bạn có thể chia sẻ với người tin tưởng."}
 
-    {"question": "Tôi thấy áp lực học nhóm", "answer": "Hãy chọn nhóm phù hợp với bạn."},
-    {"question": "Tôi không thích bản thân", "answer": "Hãy học cách chấp nhận và cải thiện dần."},
-    {"question": "Tôi sợ bị từ chối", "answer": "Từ chối là điều bình thường."},
-    {"question": "Tôi không biết bắt đầu", "answer": "Bắt đầu từ việc nhỏ nhất."},
-    {"question": "Tôi cảm thấy trống rỗng", "answer": "Hãy kết nối với người khác."},
-
-    {"question": "Tôi muốn bỏ cuộc", "answer": "Bạn đã đi được xa rồi, đừng bỏ cuộc nhé."},
-    {"question": "Tôi thấy mình yếu đuối", "answer": "Biết cảm xúc là một sức mạnh."},
-    {"question": "Tôi cần lời khuyên", "answer": "Bạn có thể chia sẻ cụ thể hơn để mình giúp bạn."},
-    {"question": "Tôi thấy khó khăn", "answer": "Bạn đang cố gắng rồi, hãy kiên trì thêm chút nữa."},
-    {"question": "Tôi muốn tốt hơn", "answer": "Bạn đã bắt đầu rồi, đó là điều quan trọng nhất."}
   ]
 }
