@@ -6,17 +6,12 @@ import os
 app = Flask(__name__)
 app.secret_key = "secret123"
 
-# ======================
-# LOAD DATA
-# ======================
+
 with open("data.json", encoding="utf-8") as f:
     data = json.load(f)
 
 FAQ = data.get("faq", [])
 
-# ======================
-# SUGGESTIONS
-# ======================
 SUGGESTIONS = [
     "Điều kiện vào đoàn",
     "Tôi bị mất động lực học",
@@ -25,15 +20,12 @@ SUGGESTIONS = [
     "Tôi bị bạn bắt nạt phải làm sao?"
 ]
 
-# ======================
-# NORMALIZE TEXT
-# ======================
+
 def normalize(text):
     return text.lower().strip()
 
-# ======================
-# FIND BEST MATCH
-# ======================
+
+
 def find_best_answer(user_input):
     user_input = normalize(user_input)
 
@@ -45,7 +37,7 @@ def find_best_answer(user_input):
 
         score = difflib.SequenceMatcher(None, user_input, question).ratio()
 
-        # BONUS: keyword boost
+  
         if any(word in user_input for word in question.split()):
             score += 0.1
 
@@ -58,9 +50,7 @@ def find_best_answer(user_input):
 
     return None
 
-# ======================
-# SMART FALLBACK
-# ======================
+
 def fallback_answer(user_input):
     user_input = normalize(user_input)
 
@@ -75,9 +65,7 @@ def fallback_answer(user_input):
 
     return None
 
-# ======================
-# ROUTES
-# ======================
+
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -91,10 +79,10 @@ def chat():
         if not user_message:
             return jsonify({"reply": "Bạn chưa nhập nội dung 🤔"})
 
-        # lưu history
+       
         session.setdefault("history", []).append(user_message)
 
-        # tìm câu trả lời
+        
         answer = find_best_answer(user_message)
 
         if not answer:
