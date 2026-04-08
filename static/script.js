@@ -9,7 +9,7 @@ window.onload = () => {
 
 // ================= SEND =================
 async function sendMessage(text = null) {
-    const message = text || input.value.trim();
+    const message = (text || input.value).trim();
     if (!message) return;
 
     addMessage(message, "user");
@@ -39,7 +39,7 @@ async function sendMessage(text = null) {
 }
 
 function sendQuick(text) {
-    sendMessage(text);
+    sendMessage(text.trim());
 }
 
 // ================= ADD MESSAGE (FIX AVATAR + SAVE) =================

@@ -1,6 +1,7 @@
-{
-  "faq": [
 
+    {
+  "faq": [
+{"question": "xin chào", "answer": "Xin chào 👋 Mình có thể hỗ trợ bạn về Đoàn hoặc tâm lý học đường."},
     {"question": "Điều kiện vào đoàn", "answer": "Học sinh từ lớp 9 trở lên, có ý thức tốt, tham gia hoạt động và được chi đoàn giới thiệu."},
     {"question": "Hoạt động đoàn", "answer": "Gồm văn nghệ, tình nguyện, thể thao, sinh hoạt định kỳ giúp phát triển kỹ năng và tinh thần tập thể."},
     {"question": "Ai có thể tham gia đoàn", "answer": "Học sinh, sinh viên từ 16 đến 30 tuổi có ý thức tốt đều có thể tham gia."},
