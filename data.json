@@ -1,31 +1,48 @@
 {
   "faq": [
 
-    {"question": "Tiêu chuẩn vào đoàn là gì?", "answer": "Thanh niên từ 16-30 tuổi, có đạo đức tốt, tham gia hoạt động, hiểu về Đoàn và được giới thiệu hợp lệ."},
-    {"question": "Quyền của đoàn viên là gì?", "answer": "Được tham gia hoạt động, được bảo vệ quyền lợi, được bầu cử, góp ý và phát triển bản thân."},
-    {"question": "Nghĩa vụ của đoàn viên là gì?", "answer": "Chấp hành điều lệ, rèn luyện đạo đức, tham gia hoạt động và đóng đoàn phí đầy đủ."},
+    {"question": "Điều kiện vào đoàn", "answer": "Học sinh từ lớp 9 trở lên, có ý thức tốt, tham gia hoạt động và được chi đoàn giới thiệu."},
+    {"question": "Hoạt động đoàn", "answer": "Gồm văn nghệ, tình nguyện, thể thao, sinh hoạt định kỳ giúp phát triển kỹ năng và tinh thần tập thể."},
+    {"question": "Ai có thể tham gia đoàn", "answer": "Học sinh, sinh viên từ 16 đến 30 tuổi có ý thức tốt đều có thể tham gia."},
+    {"question": "Làm sao để tham gia hoạt động đoàn?", "answer": "Bạn đăng ký với chi đoàn hoặc theo dõi thông báo từ nhà trường."},
+    {"question": "Ai là bí thư đoàn trường", "answer": "Bí thư đoàn trường THPT Việt Lâm hiện tại là thầy giáo Bùi Quyết Thắng."},
+    {"question": "Độ tuổi để được kết nạp vào đoàn TNCS Hồ Chí Minh", "answer": "Thanh niên từ 16 đến 30 tuổi (có thể xem xét từ 15 tuổi 1 ngày nếu là học sinh THPT đủ điều kiện)."},
+    {"question": "Tôi bị mất động lực học", "answer": "Điều này rất bình thường. Bạn không cần lấy lại động lực ngay lập tức, hãy bắt đầu bằng việc học một phần nhỏ, dễ nhất để tạo lại cảm giác tiến bộ."},
+  {"question": "Trường THPT Việt Lâm có bao nhiêu đoàn viên", "answer": "Trường THPT Việt Lâm có 483 đoàn viên gồm 18 chi đoàn học sinh và 1 chi đoàn giáo viên"},
+    {"question": "Tôi cảm thấy cô đơn", "answer": "Cảm giác này không hiếm. Bạn có thể thử kết nối lại với một người bạn, hoặc đơn giản là tham gia một hoạt động nhỏ để không bị tách khỏi tập thể."},
+{"question": "Trường THPT Việt Lâm có hoạt động gì", "answer": "Trường THPT Việt Lâm có tổ chức giải bóng chuyền truyền thống hằng năm vào ngày 26/3, tổ chức ngày hội stem giữa các chi đoàn học sinh, tổ chức ngày hội đọc sách,...."},
+    {"question": "Tôi áp lực điểm số", "answer": "Điểm số quan trọng nhưng không phải tất cả. Điều quan trọng hơn là bạn đang tiến bộ hay không và bạn học được gì từ quá trình đó."},
 
-    {"question": "Em bị bạn bắt nạt phải làm sao?", "answer": "Không im lặng, hãy báo với thầy cô hoặc người lớn, lưu bằng chứng nếu có. Bạn xứng đáng được bảo vệ."},
-    {"question": "Nếu thấy bạn bị bắt nạt?", "answer": "Không cổ vũ, hãy báo cho giáo viên hoặc người có trách nhiệm."},
+    {"question": "Tôi sợ thi", "answer": "Sợ thi thường đến từ việc chưa sẵn sàng. Hãy ôn theo từng phần nhỏ và luyện đề để quen cảm giác, nỗi sợ sẽ giảm dần."},
 
-    {"question": "Em bị stress học tập", "answer": "Hãy nghỉ ngắn, chia nhỏ việc học và đừng ép bản thân quá."},
-    {"question": "Em không tập trung học được", "answer": "Thử học Pomodoro, tắt điện thoại và chọn nơi yên tĩnh."},
-    {"question": "Em mất động lực học", "answer": "Hãy bắt đầu từ mục tiêu nhỏ và hoàn thành từng bước."},
+    {"question": "Tôi không tập trung học được", "answer": "Hãy thử học theo chu kỳ 25 phút – 5 phút nghỉ, tắt điện thoại và chọn nơi học yên tĩnh. Tập trung là kỹ năng có thể luyện được."},
 
-    {"question": "Thi giáo dục STEM là gì?", "answer": "Là cuộc thi ứng dụng kiến thức khoa học, công nghệ, kỹ thuật để giải quyết vấn đề thực tế."},
-    {"question": "Hoạt động STEM ở trường có gì?", "answer": "Gồm làm sản phẩm, thí nghiệm, sáng tạo và thi theo nhóm."},
+    {"question": "Tôi cảm thấy mệt mỏi và chán học", "answer": "Có thể bạn đang quá tải. Hãy cho mình nghỉ ngắn, sau đó quay lại với mục tiêu nhỏ hơn thay vì cố gắng quá sức."},
 
-    {"question": "Hoạt động chào mừng 30/4 có gì?", "answer": "Gồm văn nghệ, thi đua, hoạt động truyền thống và giáo dục lịch sử."},
+    {"question": "Tôi bị áp lực từ gia đình", "answer": "Bạn nên chọn thời điểm phù hợp để chia sẻ suy nghĩ của mình. Khi nói rõ cảm xúc, người khác sẽ dễ hiểu bạn hơn."},
 
-    {"question": "Hoạt động hướng nghiệp là gì?", "answer": "Giúp học sinh hiểu ngành nghề, định hướng tương lai và lựa chọn phù hợp."},
+    {"question": "Tôi hay suy nghĩ tiêu cực", "answer": "Hãy thử viết ra những điều bạn đang nghĩ. Khi nhìn lại, bạn sẽ thấy không phải mọi suy nghĩ đều là sự thật."},
 
-    {"question": "Giải bóng chuyền truyền thống là gì?", "answer": "Là hoạt động thể thao thường niên nhằm rèn luyện sức khỏe và tăng tinh thần đoàn kết."},
+    {"question": "Tôi không tự tin", "answer": "Tự tin không đến ngay lập tức. Hãy bắt đầu bằng việc làm tốt những việc nhỏ, dần dần bạn sẽ tin vào bản thân hơn."},
 
-    {"question": "Em bị áp lực gia đình", "answer": "Hãy chia sẻ nhẹ nhàng với bố mẹ, họ sẽ dần hiểu bạn."},
-    {"question": "Em lo lắng quá nhiều", "answer": "Hãy hít thở sâu và tập trung vào hiện tại."},
-    {"question": "Em cảm thấy cô đơn", "answer": "Bạn không hề một mình, hãy thử kết nối với người khác."},
-    {"question": "Em tự ti", "answer": "Hãy tập trung vào điểm mạnh của mình."},
-    {"question": "Em buồn", "answer": "Buồn là cảm xúc bình thường, bạn có thể chia sẻ với người tin tưởng."}
+    {"question": "Tôi bị mất ngủ vì lo lắng", "answer": "Hãy hạn chế dùng điện thoại trước khi ngủ, thư giãn nhẹ và tránh học quá sát giờ ngủ."},
 
+    {"question": "Tôi không biết mục tiêu của mình", "answer": "Bạn không cần biết ngay. Hãy thử nhiều thứ, trải nghiệm dần, mục tiêu sẽ rõ hơn theo thời gian."},
+
+    {"question": "Tôi sợ thất bại", "answer": "Thất bại không phải là kết thúc mà là cách nhanh nhất để bạn học được điều đúng."},
+
+    {"question": "Tôi cảm thấy bị cô lập", "answer": "Hãy thử chủ động bắt chuyện với một người hoặc tham gia hoạt động chung. Mối quan hệ cần thời gian để hình thành."},
+
+    {"question": "Tôi không muốn học nữa", "answer": "Đừng ép bản thân quá mức. Hãy nghỉ ngắn rồi quay lại với một phần dễ hơn để lấy lại nhịp học."},
+
+    {"question": "Tôi lo lắng về tương lai", "answer": "Không ai có thể kiểm soát hoàn toàn tương lai. Tập trung làm tốt hiện tại là cách tốt nhất để giảm lo lắng."},
+
+    {"question": "Tôi cảm thấy mình vô dụng", "answer": "Bạn không vô dụng. Có thể bạn đang so sánh sai cách. Hãy nhìn vào những gì bạn đã làm được, dù nhỏ."},
+
+    {"question": "Tôi muốn bỏ cuộc", "answer": "Bạn đã đi được một đoạn rồi. Trước khi bỏ cuộc, hãy thử giảm tốc độ thay vì dừng hẳn."},
+
+    {"question": "Tôi bị bạn bắt nạt phải làm sao?", "answer": "Bạn không nên im lặng. Hãy báo với thầy cô hoặc người lớn và lưu lại bằng chứng nếu có. Bạn xứng đáng được bảo vệ."},
+
+    {"question": "Nếu thấy bạn bị bắt nạt thì làm gì?", "answer": "Không nên cổ vũ hay quay video. Hãy báo cho giáo viên hoặc người có trách nhiệm."}
   ]
 }

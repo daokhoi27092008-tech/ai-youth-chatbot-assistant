@@ -18,11 +18,11 @@ FAQ = data.get("faq", [])
 # SUGGESTIONS
 # ======================
 SUGGESTIONS = [
-    "Tiêu chuẩn vào đoàn là gì?",
-    "Em bị bạn bắt nạt phải làm sao?",
-    "Thi giáo dục STEM là gì?",
-    "Hoạt động chào mừng 30/4 có gì?",
-    "Em bị stress học tập"
+    "Điều kiện vào đoàn",
+    "Tôi bị mất động lực học",
+    "Tôi áp lực điểm số",
+    "Tôi không tập trung học được",
+    "Tôi bị bạn bắt nạt phải làm sao?"
 ]
 
 # ======================
